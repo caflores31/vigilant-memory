@@ -1,15 +1,13 @@
+// NPM Dependencies
 const mysql = require('mysql');
 const inquirer = require("inquirer");
-
+// create the connection to database //
 var connection = mysql.createConnection({
     host: "localhost",
-
-    // Your port; if not 3306
+    // Your port; if not 3306 or (not default)
     port: 3306,
-
     // Your username
     user: "root",
-
     // Your password
     password: "wednesday",
     database: "cms"
@@ -20,7 +18,7 @@ connection.connect(function (err) {
     console.log("connected as id " + connection.threadId + "\n");
     askQuestions();
 });
-
+// Prompt users with questions //
 function askQuestions() {
     inquirer.prompt({
         message: "what would you like to do?",
@@ -154,7 +152,7 @@ function addRole() {
 function updateEmployeeRole() {
     inquirer.prompt([
         {
-            message: "which employee would you like to update? (use first name only for now)",
+            message: "which employee would you like to update? (please provide first name)",
             type: "input",
             name: "name"
         }, {
