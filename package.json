@@ -1,0 +1,23 @@
+{
+  "name": "employee-tracker",
+  "version": "1.0.0",
+  "description": "Employee Management by using node, inquirer and MySQL",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caflores31/vigilant-memory.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/caflores31/vigilant-memory/issues"
+  },
+  "homepage": "https://github.com/caflores31/vigilant-memory#readme",
+  "dependencies": {
+    "inquirer": "^8.1.0",
+    "mysql": "^2.18.1"
+  }
+}
